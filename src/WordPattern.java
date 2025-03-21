@@ -11,6 +11,8 @@ public class WordPattern {
         System.out.println(pattern("adxp", " ","ice cream taco day"));
     }
 
+    // time: o(n) where n is length of the pattern/amount of words. because the program must check every word matches the pattern
+    // space: o(n) because the HashMap grows with the size of the pattern
     public static boolean pattern(String p, String d, String s){
         String[] words = s.split(Pattern.quote(d)); //I HATE REGEX!!!!
 
@@ -29,7 +31,6 @@ public class WordPattern {
             }
         }
 
-        // If all checks pass, return true
         return true;
     }
 }
