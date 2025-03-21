@@ -2,6 +2,11 @@ import java.util.*;
 
 public class RadixSort {
     //I did the uppercase extra credit
+
+    //time O(n*m) where n is the lenght of the string array and m is the lenght of the longest string
+    // the countingSort() method is called for every character in the longest string (m)
+    // the loop in the middle adds a char for every string (n)
+    //space is O(n) because the lists inside the hashmap grows with the amount of strings given in the input
     public static void main(String[] args) {
         String[] arr = new String[]{"google", "gojo", "amazingly", "jogo", "luna", "pup", "solas", "solo", "pupperino", "amaterasu",
                 "amazon", "puppy", "hydra", "amazonia", "vueltiao", "UpperCase"};
